@@ -1,0 +1,82 @@
+.footer {
+  background-color: $bckg-color-hero-footer;
+  padding: 60px 0;
+  display: flex;
+
+  &__content {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $white-color;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    margin-right: 70px;
+  }
+}
+
+.footer-logo {
+  color: $white-color;
+  font-family: $font-logo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+/* Адресс и контакты */
+
+.address {
+  margin-top: 20px;
+}
+
+.address__list {
+  @extend %reset-list;
+}
+
+.address__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address__link {
+  color: $white-color;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &--contacts {
+    color: $footer-contacts-placeholder-color;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    transition: color $duration $cubic;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}

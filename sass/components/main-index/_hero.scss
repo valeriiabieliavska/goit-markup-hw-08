@@ -1,0 +1,36 @@
+.hero {
+  
+  background-color: $bckg-color-hero-footer;
+  background-image: $bckg-img-hero, url(../images/hero/Hero.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  max-width: 1600px;
+  height: 600px;
+  padding: 200px 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    color: $white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: $ident;
+  }
+
+  &__button {
+    display: block;
+    padding: 10px 32px;
+    min-width: 200px;
+    margin: 0 auto;
+  }
+}

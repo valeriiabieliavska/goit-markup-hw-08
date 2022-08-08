@@ -1,0 +1,21 @@
+.button {
+  font-family: inherit;
+  background-color: $accent-color;
+  color: $white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  cursor: pointer;
+  box-shadow: $button-shadow;
+  border-radius: 4px;
+  border: none;
+
+  letter-spacing: 0.06em;
+
+  transition: background-color $duration $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-focus;
+  }
+}

@@ -1,0 +1,78 @@
+.team {
+  background-color: $team-bckg;
+
+  &__list {
+    @extend %reset-list;
+    display: flex;
+    padding-left: 0;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+
+    margin-bottom: 10px;
+  }
+
+  &__post {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+  }
+
+  &__wrapper {
+    padding: 30px 0;
+  }
+}
+
+.team__item {
+  margin-right: $ident;
+
+  background: $white-color;
+  box-shadow: $team-modal-box-shadow;
+  border-radius: 0px 0px 4px 4px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Социальные сети команды */
+
+.team-social {
+  @extend %reset-list;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.team-social__link {
+  width: 44px;
+  height: 44px;
+  color: $svg-color;
+  background-color: $white-color;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: color $duration $cubic, background-color $duration $cubic;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+}
+
+.svg-social {
+  fill: currentColor;
+}

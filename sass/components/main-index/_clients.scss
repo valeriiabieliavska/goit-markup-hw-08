@@ -1,0 +1,32 @@
+.clients__list {
+  @extend %reset-list;
+  display: flex;
+  gap: $ident;
+}
+
+.clients__icon {
+  fill: currentColor;
+}
+
+.clients__link {
+  box-sizing: border-box;
+
+  width: 170px;
+  height: 92px;
+
+  color: $svg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid $svg-color;
+  border-radius: 4px;
+
+  transition: color $duration $cubic, border-color $duration $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}

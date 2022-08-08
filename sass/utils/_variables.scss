@@ -1,0 +1,40 @@
+$font-main: Roboto, sans-serif;
+$font-logo: Raleway, sans-serif;
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+$main-text-color: #212121;
+$secondary-text-color: #757575;
+$accent-color: #2196f3;
+$white-color: #ffffff;
+$items: 3;
+$ident: 30px;
+$svg-color: #afb1b8;
+$duration: 250ms;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+$header-border-bottom-color: #ececec;
+$black-color: #000;
+$bckg-color-hero-footer: #2f303a;
+$bckg-img-hero: linear-gradient(
+  to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)
+);
+$button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$button-hover-focus: #188ce8;
+$features-menu-border-bckg: #f5f4fa;
+$work-desc-bckg: rgba(47, 48, 58, 0.8);
+$team-bckg: #f5f4fa;
+$team-modal-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+$footer-contacts-placeholder-color: rgba(255, 255, 255, 0.6);
+$footer-social-bckg: rgba(255, 255, 255, 0.1);
+$footer-input-border: rgba(255, 255, 255, 0.3);
+$backdrop-bckg: rgba(0, 0, 0, 0.2);
+$modal-input-border: rgba(33, 33, 33, 0.2);
+$menu-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+$portfolio-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$overlay-bckg: rgba(33, 150, 243, 0.9);
