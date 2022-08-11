@@ -28,7 +28,7 @@
   left: 50%;
 
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
+  width: 450px;
 
   background: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -40,6 +40,12 @@
   transition: transform $duration $cubic, opacity $duration $cubic;
 
   padding: 40px;
+
+  & {
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+    }
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -96,13 +102,20 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: $main-text-color;
 
     margin-bottom: 12px;
+
+    & {
+        @media screen and (min-width: $desktop) {
+          line-height: 1.2;
+        }
+      }
+
   }
 
   &__group {
@@ -133,7 +146,7 @@
 .modal-form__input {
   box-sizing: border-box;
 
-  width: 448px;
+  width: 370px;
   height: 40px;
 
   border: 1px solid $modal-input-border;
@@ -148,6 +161,12 @@
   &:hover,
   &:focus {
     border-color: $accent-color;
+  }
+
+  & {
+    @media screen and (min-width: $desktop) {
+      width: 448px;
+    }
   }
 }
 
@@ -172,7 +191,7 @@
   resize: none;
   box-sizing: border-box;
 
-  width: 448px;
+  width: 370px;
   height: 120px;
 
   border: 1px solid $modal-input-border;
@@ -187,6 +206,7 @@
   &:hover,
   &:focus {
     border-color: $accent-color;
+
   }
 
   &::placeholder {
@@ -197,6 +217,12 @@
 
     color: rgba(117, 117, 117, 0.5);
   }
+
+    & {
+      @media screen and (min-width: $desktop) {
+        width: 448px;
+      }
+    }
 }
 
 /* Чекбокс */
@@ -210,12 +236,21 @@
 
   &__text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-
+   
+font-weight: 400;
+  font-size: 12px;
     letter-spacing: 0.03em;
 
     color: $secondary-text-color;
+
+
+
+      & {
+          @media screen and (min-width: $desktop) {
+            font-size: 14px;
+              line-height: 1.71;
+          }
+        }
   }
 
   &__icon {

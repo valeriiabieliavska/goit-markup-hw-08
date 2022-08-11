@@ -20,18 +20,50 @@
 
 .portfolio__list {
   @extend %reset-list;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   box-sizing: border-box;
   padding-left: 0;
-  gap: 30px;
+ 
+  
+
+  & {
+    @media screen and (min-width: 768px) {
+      display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+  }
+
 }
 
 .portfolio__item {
   background: $white-color;
-  flex-basis: calc(100% / $items - $ident);
+  // flex-basis: calc(100% / $items - $ident);
 
   transition: box-shadow $duration $cubic;
+  width: 450px;
+  height: 404px;
+
+  // margin-right: auto;
+  //   margin-left: auto;
+    margin-bottom: 30px;
+  
+
+  & {
+      @media screen and (min-width: 768px) {
+        width: 354px;
+          height: 440px;
+          flex-basis: calc(100% / 2 - $ident);
+      }
+    }
+
+         & {
+           @media screen and (min-width: 1200px) {
+             width: 370px;
+             height: 404px;
+            flex-basis: calc(100% / $items - $ident);
+           }
+         }
 }
 
 .portfolio__text {

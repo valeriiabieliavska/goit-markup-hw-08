@@ -1,11 +1,24 @@
 .menu {
   @extend %reset-list;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin-top: 0;
   margin-bottom: 50px;
   gap: 8px;
+  width: 326px;
+
+  & {
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+      justify-content: center;
+      width: 575px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
+
 
 .menu__button {
   color: $main-text-color;
