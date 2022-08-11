@@ -62,61 +62,16 @@
             >
           </li>
         </ul>
+      <div>
+        <button class="page-header__button" type="button"><svg class="page-header__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+            </svg></button>
+          </div>
       </div>
     </header>
     <!-- Заголовок -->
     <main>
-            <!-- Меню MOBILE -->
-      <div class="mobile-header container">
-        <a class="logo" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
-        <button class="mobile-header__button" type="button"><svg class="mobile-header__icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-mobile-menu"></use>
-          </svg></button>
-      </div>
-      <div class="mobile-menu container">
-        <button class="mobile-menu__button--close" type="button">
-          <svg class="mobile-menu__icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-mobile-close"></use>
-          </svg>
-        </button>
-        <nav class="mobile-nav">
-          <ul class="mobile-nav__list">
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link site-nav__link--current" href="index.html">Студія</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="/">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="mobile-contacts">
-          <li class="mobile-contacts__item">
-            <a class="mobile-contacts__link mobile-contacts__link--tel link" href="tel:+380961111111">
-              +38 096 111 11 11</a>
-          </li>
-          <li class="mobile-contacts__item">
-            <a class="mobile-contacts__link mobile-contacts__link--mail link" href="moilto:info@devstudio.com">
-              info@devstudio.com</a>
-          </li>
-        </ul>
-        <ul class="mobile-social">
-          <li class="mobile-social__item">
-            <a class="mobile-social__link link" href="" target="_blank" rel="nofollow noopener noreferrer">Instagram</a>
-          </li>
-          <li class="mobile-social__item">
-            <a class="mobile-social__link link" href="" target="_blank" rel="nofollow noopener noreferrer">Twitter</a>
-          </li>
-          <li class="mobile-social__item">
-            <a class="mobile-social__link link" href="" target="_blank" rel="nofollow noopener noreferrer">Facebook</a>
-          </li>
-          <li class="mobile-social__item">
-            <a class="mobile-social__link link" href="" target="_blank" rel="nofollow noopener noreferrer">LinkedIn</a>
-          </li>
-        </ul>
-      </div>
+            
       <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -646,6 +601,7 @@
     <!-- Подвал сайта -->
     <footer class="footer section">
       <div class="container footer__content">
+        <div class="footer__block">
         <div class="footer__address">
           <a href="./index.html" class="footer-logo"
             ><span class="logo--blue">Web</span>Studio</a
@@ -761,9 +717,11 @@
             </li>
           </ul>
         </div>
+        </div>
         <div class="mailing">
           <h2 class="footer__subtitle">Підпишіться на розсилку</h2>
           <form>
+            <div class="mailing__block">
             <input
               class="mailing__input"
               type="email"
@@ -778,6 +736,7 @@
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
+            </div>
           </form>
         </div>
       </div>
@@ -870,6 +829,69 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+
+    <!-- Меню MOBILE -->
+    <div class="mobile-header container">
+    
+    <div class="mobile-menu">
+      <button class="mobile-menu__button--close" type="button">
+        <svg class="mobile-menu__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-mobile-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link site-nav__link--current" href="index.html">Студія</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="/">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-contacts">
+      <ul class="mobile-contacts__list">
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts__link--tel link" href="tel:+380961111111">
+            +38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts__link--mail link" href="moilto:info@devstudio.com">
+            info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-social">
+        <li class="mobile-social__item">
+          <a class="mobile-social__link link" href="" target="_blank" rel="nofollow noopener noreferrer">Instagram</a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link link" href="" target="_blank" rel="nofollow noopener noreferrer">Twitter</a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link link" href="" target="_blank" rel="nofollow noopener noreferrer">Facebook</a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link link" href="" target="_blank" rel="nofollow noopener noreferrer">LinkedIn</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    </div>
+
+    <script src="./js/modal.js" type="modul"></script>
+      <script src="./js/mobile-menu.js" type="modul"></script>
   </body>
 </html>
+
+<!-- хедер сделать через медиа запрос
+  добавить туда кнопку
+в меню сделать контейнеры и сделать флекс бокс 
+ьаржин 302 не ставить
+а поставить к последнему блоку маржин боттом авто
+кнопка-транспарент
+на все окно мобильного меню поставить паддинг 40-48
+не на итемы
+-->

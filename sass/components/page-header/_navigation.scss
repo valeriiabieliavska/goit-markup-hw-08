@@ -1,13 +1,25 @@
 .site-nav {
   display: flex;
-
-  &__list {
-    @extend %reset-list;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-  }
+  justify-content: center;
+  align-items: center;
 }
+
+
+ .site-nav__list {
+   @extend %reset-list;
+   display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+   gap: 50px;
+ }
+
+.site-nav__list {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+
 
 .site-nav__link {
   color: $main-text-color;

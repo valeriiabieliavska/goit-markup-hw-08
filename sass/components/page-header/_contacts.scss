@@ -1,13 +1,36 @@
 .contacts {
   @extend %reset-list;
-  display: flex;
+  display: block;
   margin-left: auto;
-  gap: 50px;
+}
 
-  &__icon {
-    fill: currentColor;
-    margin-right: 10px;
+
+
+.contacts {
+
+  @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
   }
+}
+
+.contacts__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .contacts__link {

@@ -7,11 +7,24 @@
   text-decoration: none;
   letter-spacing: 0.03em;
 
-  margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  margin-right: 88px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 
   &--blue {
     color: $accent-color;
   }
+
+  & {
+    @media screen and (min-width: 768px) {
+      margin-top: 24px;
+      margin-bottom: 26px;
+    }
+  }
+
+     & {
+       @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+       }
+     }
 }

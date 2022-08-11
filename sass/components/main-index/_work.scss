@@ -1,6 +1,11 @@
-
+ .work {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
 
   .work__list {
+    @extend %reset-list;
     display: flex;
     gap: $ident;
   }

@@ -1,5 +1,4 @@
 .hero {
-  
   background-color: $bckg-color-hero-footer;
   background-image: $bckg-img-hero, url(../images/hero/Hero.jpg);
 
@@ -16,15 +15,24 @@
   &__title {
     color: $white-color;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.6;
+
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    width: 696px;
+    width: 360px;
     margin: 0 auto;
     margin-bottom: $ident;
+
+    & {
+      @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+      }
+    }
   }
 
   &__button {

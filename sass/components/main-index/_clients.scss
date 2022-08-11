@@ -1,8 +1,10 @@
 .clients__list {
   @extend %reset-list;
   display: flex;
-  gap: $ident;
+  flex-wrap: wrap;
+    gap: 30px;
 }
+
 
 .clients__icon {
   fill: currentColor;
@@ -11,7 +13,7 @@
 .clients__link {
   box-sizing: border-box;
 
-  width: 170px;
+  width: 210px;
   height: 92px;
 
   color: $svg-color;
@@ -29,4 +31,16 @@
     color: $accent-color;
     border-color: $accent-color;
   }
+
+  & {
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+  }
+
+    & {
+      @media screen and (min-width: 1200px) {
+        width: 170px;
+      }
+    }
 }

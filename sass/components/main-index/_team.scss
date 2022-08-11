@@ -1,10 +1,22 @@
 .team {
   background-color: $team-bckg;
 
+
+// поменять размер7 скорее всего фотографией
   &__list {
     @extend %reset-list;
-    display: flex;
+    display: block;
     padding-left: 0;
+    // justify-content: space-between;
+
+
+    & {
+      @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $ident;
+      }
+    }
   }
 
   &__name {
@@ -33,15 +45,11 @@
 }
 
 .team__item {
-  margin-right: $ident;
+  margin-bottom: $ident;
 
   background: $white-color;
   box-shadow: $team-modal-box-shadow;
   border-radius: 0px 0px 4px 4px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 /* Социальные сети команды */
