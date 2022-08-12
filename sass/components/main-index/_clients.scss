@@ -2,9 +2,8 @@
   @extend %reset-list;
   display: flex;
   flex-wrap: wrap;
-    gap: 30px;
+  gap: 30px;
 }
-
 
 .clients__icon {
   fill: currentColor;
@@ -38,9 +37,9 @@
     }
   }
 
-    & {
-      @media screen and (min-width: 1200px) {
-        width: 170px;
-      }
+  & {
+    @media screen and (min-width: 1200px) {
+      width: 170px;
     }
+  }
 }

@@ -1,9 +1,9 @@
 .features {
- & {
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 0;
+  & {
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 0;
+    }
   }
- }
 
   &__subtitle {
     font-weight: 700;
@@ -31,23 +31,22 @@
     width: 450px;
 
     & {
-        @media screen and (min-width: 768px) {
-          width: 354px;
-        }
+      @media screen and (min-width: 768px) {
+        width: 354px;
       }
-    
-      & {
-        @media screen and (min-width: 1200px) {
-          width: 270px;
-        }
+    }
+
+    & {
+      @media screen and (min-width: 1200px) {
+        width: 270px;
       }
+    }
   }
 
   &__list {
     @extend %reset-list;
     display: block;
     padding: 0;
-   
 
     & {
       @media screen and (min-width: 768px) {
@@ -87,10 +86,10 @@
     justify-content: center;
 
     & {
-        @media screen and (min-width: 768px) {
-          width: 354px;
-        }
+      @media screen and (min-width: 768px) {
+        width: 354px;
       }
+    }
 
     & {
       @media screen and (min-width: 1200px) {

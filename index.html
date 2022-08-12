@@ -16,7 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <!-- <script src="./js/modal.js"></script> -->
@@ -62,13 +62,7 @@
           </li>
         </ul>
         <div>
-          <button
-            class="page-header__button"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-header"
-            data-menu-open
-          >
+          <button class="page-header__button" type="button" data-menu-open>
             <svg class="page-header__icon" width="40" height="40">
               <use href="./images/icons.svg#icon-mobile-menu"></use>
             </svg>
@@ -171,15 +165,33 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img class="work-img" src="./images/imgd.jpg" alt="Программирование" width="370" />
+              <img
+                class="work-img"
+                srcset="./images/work/img-1-370.jpg 370w, ./images/work/img-1-740.jpg 740w"
+                src="./images/work/img-1-370.jpg"
+                alt="Программирование"
+                width="370"
+              />
               <h3 class="work__desc">Десктопні додатки</h3>
             </li>
             <li class="work__item">
-              <img class="work__img" src="./images/img-2w.jpg" alt="Веб-дизайн" width="370" />
+              <img
+                class="work__img"
+                srcset="./images/work/img-2-370.jpg 370w, ./images/work/img-2-740.jpg 740w"
+                src="./images/work/img-2-370.jpg"
+                alt="Веб-дизайн"
+                width="370"
+              />
               <h3 class="work__desc">Мобільні додатки</h3>
             </li>
             <li class="work__item">
-              <img class="work__img" src="./images/img-3p.jpg" alt="Палитра" width="370" />
+              <img
+                class="work__img"
+                srcset="./images/work/img-3-370.jpg 370w, ./images/work/img-3-740.jpg 740w"
+                src="./images/work/img-3-370.jpg"
+                alt="Палитра"
+                width="370"
+              />
               <h3 class="work__desc">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -191,7 +203,20 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img class="team__img" src="./images/img.jpg" alt="Игорь Демьяненко" width="270" />
+              <img
+                class="team__img"
+                srcset="
+                  ./images/team/img-1-270.jpg 270w,
+                  ./images/team/img-1-354.jpg 354w,
+                  ./images/team/img-1-450.jpg 450w,
+                  ./images/team/img-1-540.jpg 540w,
+                  ./images/team/img-1-708.jpg 708w,
+                  ./images/team/img-1-900.jpg 900w
+                "
+                src="./images/team/img-1-270.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                alt="Игорь Демьяненко"
+              />
               <div class="team__wrapper">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__post">Product Designer</p>
@@ -252,7 +277,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/img-2.jpg" alt="Ольга Репина" width="270" />
+              <img
+                class="team__img"
+                srcset="
+                  ./images/team/img-2-270.jpg 270w,
+                  ./images/team/img-2-354.jpg 354w,
+                  ./images/team/img-2-450.jpg 450w,
+                  ./images/team/img-2-540.jpg 540w,
+                  ./images/team/img-2-708.jpg 708w,
+                  ./images/team/img-2-900.jpg 900w
+                "
+                src="./images/team/img-2-270.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                alt="Ольга Репина"
+              />
               <div class="team__wrapper">
                 <h3 class="team__name">Ольга Репіна</h3>
                 <p class="team__post">Frontend Developer</p>
@@ -313,7 +351,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/img-3.jpg" alt="Николай Тарасов" width="270" />
+              <img
+                class="team__img"
+                srcset="
+                  ./images/team/img-3-270.jpg 270w,
+                  ./images/team/img-3-354.jpg 354w,
+                  ./images/team/img-3-450.jpg 450w,
+                  ./images/team/img-3-540.jpg 540w,
+                  ./images/team/img-3-708.jpg 708w,
+                  ./images/team/img-3-900.jpg 900w
+                "
+                src="./images/team/img-3-270.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                alt="Николай Тарасов"
+              />
               <div class="team__wrapper">
                 <h3 class="team__name">Миколай Тарасов</h3>
                 <p class="team__post">Marketing</p>
@@ -374,7 +425,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/img-4.jpg" alt="Михаил Ермаков" width="270" />
+              <img
+                class="team__img"
+                srcset="
+                  ./images/team/img-4-270.jpg 270w,
+                  ./images/team/img-4-354.jpg 354w,
+                  ./images/team/img-4-450.jpg 450w,
+                  ./images/team/img-4-540.jpg 540w,
+                  ./images/team/img-4-708.jpg 708w,
+                  ./images/team/img-4-900.jpg 900w
+                "
+                src="./images/team/img-4-270.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                alt="Михаил Ермаков"
+              />
               <div class="team__wrapper">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__post">UI Designer</p>

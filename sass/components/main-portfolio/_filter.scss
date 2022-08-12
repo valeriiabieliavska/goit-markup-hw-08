@@ -19,7 +19,6 @@
   }
 }
 
-
 .menu__button {
   color: $main-text-color;
   background-color: $features-menu-border-bckg;
@@ -36,8 +35,7 @@
   padding: 6px 22px;
   display: inline-block;
 
-  transition: color $duration $cubic, background-color $duration $cubic,
-    box-shadow $duration $cubic;
+  transition: color $duration $cubic, background-color $duration $cubic, box-shadow $duration $cubic;
 
   &:hover,
   &:focus {
