@@ -1,13 +1,7 @@
 .mailing {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
-
-  // & {
-  //   @media screen and (min-width: 1200px) {
-  //       margin-left: 93px;
-  //     }
-  // }
 }
 
 .mailing__input {
