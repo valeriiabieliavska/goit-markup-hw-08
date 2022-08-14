@@ -7,7 +7,8 @@
 .mailing__input {
   box-sizing: border-box;
 
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 50px;
 
   border: 1px solid $footer-input-border;

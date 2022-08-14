@@ -4,20 +4,17 @@
   align-items: center;
 }
 
-
- .site-nav__list {
-   @extend %reset-list;
-   display: flex;
-   gap: 50px;
- }
+.site-nav__list {
+  @extend %reset-list;
+  display: flex;
+  gap: 50px;
+}
 
 .site-nav__list {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
   }
-
-
+}
 
 .site-nav__link {
   color: $main-text-color;
@@ -34,7 +31,7 @@
   }
 
   &::after {
-    content: "";
+    content: '';
     position: relative;
     top: 28px;
     left: 0;

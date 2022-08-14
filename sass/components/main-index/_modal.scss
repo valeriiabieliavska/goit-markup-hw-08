@@ -111,11 +111,10 @@
     margin-bottom: 12px;
 
     & {
-        @media screen and (min-width: $desktop) {
-          line-height: 1.2;
-        }
+      @media screen and (min-width: $desktop) {
+        line-height: 1.2;
       }
-
+    }
   }
 
   &__group {
@@ -206,7 +205,6 @@
   &:hover,
   &:focus {
     border-color: $accent-color;
-
   }
 
   &::placeholder {
@@ -218,11 +216,11 @@
     color: rgba(117, 117, 117, 0.5);
   }
 
-    & {
-      @media screen and (min-width: $desktop) {
-        width: 448px;
-      }
+  & {
+    @media screen and (min-width: $desktop) {
+      width: 448px;
     }
+  }
 }
 
 /* Чекбокс */
@@ -236,21 +234,19 @@
 
   &__text {
     font-weight: 400;
-   
-font-weight: 400;
-  font-size: 12px;
+
+    font-weight: 400;
+    font-size: 12px;
     letter-spacing: 0.03em;
 
     color: $secondary-text-color;
 
-
-
-      & {
-          @media screen and (min-width: $desktop) {
-            font-size: 14px;
-              line-height: 1.71;
-          }
-        }
+    & {
+      @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+      }
+    }
   }
 
   &__icon {

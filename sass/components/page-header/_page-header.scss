@@ -24,6 +24,7 @@
   border: none;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
 
   transition: color $duration $cubic;
 
@@ -43,4 +44,3 @@
   }
 }
 
-// переместить кнопку
