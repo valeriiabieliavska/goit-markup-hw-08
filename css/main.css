@@ -1064,8 +1064,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .portfolio__item {
-    -ms-flex-preferred-size: calc((100% - 30px) / 3);
-        flex-basis: calc((100% - 30px) / 3);
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 
@@ -1228,7 +1228,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .footer__block {
-    margin-left: 76px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;

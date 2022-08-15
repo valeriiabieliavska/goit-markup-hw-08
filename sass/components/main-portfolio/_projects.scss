@@ -26,8 +26,8 @@
   padding-left: 0;
 
   flex-wrap: wrap;
-
   gap: 30px;
+
   justify-content: center;
   align-content: center;
 
@@ -54,7 +54,7 @@
 
   & {
     @media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - 30px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
     }
   }
 }
